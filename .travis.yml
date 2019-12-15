@@ -1,3 +1,8 @@
+language: go
+go:
+    - master
+script:
+    - hugo
 deploy:
   provider: pages
   skip_cleanup: true
