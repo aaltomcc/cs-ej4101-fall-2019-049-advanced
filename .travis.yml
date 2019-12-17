@@ -8,7 +8,8 @@ https://github.com/gohugoio/hugo/releases/download/v0.59.1/hugo_extended_0.59.1_
 
  deploy:
    - provider: script
-     script: bash deploy.sh
      skip_cleanup: true
+     github_token: $GITHUB_TOKEN
+     keep_history: true
      on:
-       branch: source
+       branch: master
