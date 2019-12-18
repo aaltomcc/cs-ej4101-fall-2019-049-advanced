@@ -3,11 +3,11 @@ install:
   - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.61.0/hugo_extended_0.61.0_Linux-64bit.deb
   - sudo dpkg -i hugo_extended_0.61.0_Linux-64bit.deb
 script:
-  - hugo server
+  - hugo server -d
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $github_token
-  local_dir: build
+  local_dir: OttoSite
   on:
     branch: master
