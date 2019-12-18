@@ -1,4 +1,0 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "Otto's Hugo Site"
-Theme = "solar-theme-hugo"
